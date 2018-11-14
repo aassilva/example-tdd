@@ -36,8 +36,6 @@ public class ConversaoRomanos {
                 } else {
                     decinal += valor1;
                 }
-
-                //decinal += converterRomanosDesinal(romano.charAt(i), romano.charAt(i + 1));
             }
 
             if (decinal < 1 || decinal > 4999) {
@@ -47,12 +45,5 @@ public class ConversaoRomanos {
             return decinal;
         }
     }
-
-    public static int converterRomanosDesinal(char primeiro, char segundo) {
-
-        int valor1 = romanosDecinal.get(primeiro);
-        int valor2 = romanosDecinal.get(segundo);
-
-        return valor1 > valor2? valor1 : valor2-valor1;
-    }
+    
 }
